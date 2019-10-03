@@ -1,8 +1,6 @@
 FROM golang:1.12
 LABEL author="Lionel Molas"
 
-ADD fs/ /
-
 # install pagkages
 RUN apt-get update                                                      && \
     apt-get install -y ncurses-dev libtolua-dev exuberant-ctags         && \
